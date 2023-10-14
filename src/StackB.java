@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class SimpleStack {
+public class StackB {
 
     public static void main(String[] args) {
-        int[] array = new int[1];
+        int[] array = new int[10000];
         Scanner scanner = new Scanner(System.in);
         int sp = -1;
         boolean flag = true;
@@ -18,12 +18,20 @@ public class SimpleStack {
                     break;
                 }
                 case "pop" -> {
-                    System.out.println(array[sp]);
-                    sp -= 1;
+                    if (sp + 1 <= 0) {
+                        System.out.println("error");
+                    } else {
+                        System.out.println(array[sp]);
+                        sp -= 1;
+                    }
                     break;
                 }
                 case "back" -> {
-                    System.out.println(array[sp]);
+                    if (sp + 1 <= 0) {
+                        System.out.println("error");
+                    } else {
+                        System.out.println(array[sp]);
+                    }
                     break;
                 }
                 case "size" -> {
