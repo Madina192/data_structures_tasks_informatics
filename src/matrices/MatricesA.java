@@ -22,7 +22,6 @@ public class MatricesA {
             for (int j = 0; j < m; j++) {
                 sumOfElements+=array[i][j];
             }
-
         }
         System.out.println(sumOfElements);
     }
