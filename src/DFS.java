@@ -21,7 +21,6 @@ public class DFS {
         System.out.println(Arrays.toString(visited));
 
     }
-
     static void DepthFirstSearch(int vertex){
         visited[vertex] = true;
         System.out.println(" in " + vertex);
